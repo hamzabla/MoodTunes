@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Base styles using regular CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent;
+  }
+}
