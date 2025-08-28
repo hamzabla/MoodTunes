@@ -30,10 +30,10 @@ moodtunes/
 ```bash
 git clone https://github.com/hamzabla/MoodTunes.git
 cd moodtunes
+```
 
-
-2️⃣ Create a Spotify App
-
+### 2️⃣ Create a Spotify App
+```bash
 You’ll need a Spotify Developer account.
 
 Go to Spotify Developer Dashboard
@@ -46,8 +46,10 @@ Copy your Client ID and Client Secret
 
 📖 Follow Spotify’s official docs:
 👉 https://developer.spotify.com/documentation/web-api/
+```
 
-3️⃣ Environment Variables
+### 3️⃣ Environment Variables
+```bash
 🌐 Frontend (frontend/.env)
 
 # API base URL (where FastAPI backend runs)
@@ -69,15 +71,15 @@ SPOTIFY_REDIRECT_URI=http://127.0.0.1:5173/callback  # ⚠️ must match Spotify
 SECRET_KEY="xxx-xxx-key"   # change this in production
 ALGORITHM="HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES=60
-
-4️⃣ Run the Backend (FastAPI)
-
+```
+### 4️⃣ Run the Backend (FastAPI)
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
-
-5️⃣ Run the Frontend (Vite + React)
-
+```
+### 5️⃣ Run the Frontend (Vite + React)
+```bash
 We use pnpm for package management.
 
 cd frontend
@@ -88,11 +90,11 @@ pnpm dev --host 192.168.11.105
 
 Start backend + frontend.
 
-Open http://192.168.11.105:5173
- in your browser.
+Open http://192.168.11.105 in your browser.
 
 Log in with Spotify.
 
 Enter how you feel (e.g., "I feel happy and excited").
 
 MoodTunes will detect your mood and generate a playlist 🎶.
+```
