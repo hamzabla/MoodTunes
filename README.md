@@ -33,7 +33,7 @@ cd moodtunes
 ```
 
 ### 2️⃣ Create a Spotify App
-```bash
+
 You’ll need a Spotify Developer account.
 
 Go to Spotify Developer Dashboard
@@ -46,7 +46,7 @@ Copy your Client ID and Client Secret
 
 📖 Follow Spotify’s official docs:
 👉 https://developer.spotify.com/documentation/web-api/
-```
+
 
 ### 3️⃣ Environment Variables
 ```bash
@@ -85,8 +85,8 @@ We use pnpm for package management.
 cd frontend
 pnpm install
 pnpm dev --host 192.168.11.105
-
-🧪 Usage
+```
+## 🧪 Usage
 
 Start backend + frontend.
 
@@ -97,4 +97,3 @@ Log in with Spotify.
 Enter how you feel (e.g., "I feel happy and excited").
 
 MoodTunes will detect your mood and generate a playlist 🎶.
-```
